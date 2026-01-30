@@ -1,6 +1,6 @@
-# From Associations to Activations — LLM Behavioral Association Geometry
+#  LLM Behavioral Association Geometry
 
-This GitHub repository contains **code** and **lightweight data** for the paper:
+This GitHub repository contains code and lightweight data for the paper:
 
 > **From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs**
 
@@ -13,7 +13,7 @@ The full **behavioral association dataset** is hosted on Hugging Face due to its
 
 - **In this GitHub repo**:
   - **Scripts** to reproduce preprocessing, data collection, postprocessing, evaluation, and plotting (`scripts/`).
-  - **Input vocabulary files** and intermediate vocabulary products (`data/vocabulary/`).
+  - **Input vocabulary files** (`data/vocabulary/`).
   - **Evaluation / analysis outputs** used for figures and tables (`data/eval/`, `data/prediction/`).
 
 

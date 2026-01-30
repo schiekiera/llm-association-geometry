@@ -5,6 +5,7 @@ This GitHub repository contains code and lightweight data for the paper:
 > **From Associations to Activations: Comparing Behavioral and Hidden-State Semantic Geometry in LLMs**
 
 The full **behavioral association dataset** is hosted on Hugging Face due to its size:
+
 `https://huggingface.co/datasets/schiekiera/llm-association-geometry`
 
 ## What’s in this repo vs. on Hugging Face

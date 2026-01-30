@@ -114,10 +114,10 @@ ds_fa = load_dataset(
       - `data/eval/02_NN/summary_nn_best_k_<YYYYMMDD>.csv`
       - `data/eval/02_NN/summary_nn_per_k_<YYYYMMDD>.csv`
   - **Held-out-words ridge regression (prediction)**
-    - Main (mean-centered cosine):
+    - Main:
       - Per model × strategy: `data/prediction/01_held_out_words/<model>/<strategy>/ridge_predict_held_out_words_cosine_centered_<timestamp>.csv`
       - Summary: `data/prediction/01_held_out_words/01_summary/summary_prediction_analysis_<timestamp>.csv`
-    - Ablation (non-mean-centered cosine):
+    - Ablation Study:
       - Per model × strategy: `data/prediction/02_held_out_words_ablation/<model>/<strategy>/ridge_predict_held_out_words_cosine_<timestamp>.csv`
       - Summary: `data/prediction/02_held_out_words_ablation/01_summary/summary_prediction_analysis_<timestamp>.csv`
 

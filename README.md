@@ -26,7 +26,7 @@ We transfer this measurement logic to large language models. Unlike humans, LLMs
 - **Measurement protocol matters.** Whether behavior *reveals* internal structure is not a generic property of "behavior" — it depends critically on how responses are constrained and aggregated. Constrained paradigms like FC concentrate observations and yield higher signal-to-noise estimates of semantic geometry.
 
 <p align="center">
-  <img src="rsa_line_plot_1x2_grid_fc_fa.png" alt="Forced choice aligns substantially more with hidden states than free association" width="780">
+  <img src="img/rsa_line_plot_1x2_grid_fc_fa.png" alt="Forced choice aligns substantially more with hidden states than free association" width="780">
 </p>
 
 For interpretability research, this means behavioral probing can serve as a practical tool for understanding internal representations under black-box access, *if* the probe is designed with sufficient response constraint.

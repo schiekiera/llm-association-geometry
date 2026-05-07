@@ -1,5 +1,4 @@
-# From Associations to Activations
-### Comparing Behavioral and Hidden-State Semantic Geometry in LLMs
+## From Associations to Activations - Comparing Behavioral and Hidden-State Semantic Geometry in LLMs
 
 > **Accepted at ICML 2026** · [Paper](https://arxiv.org/abs/2602.00628) · [Dataset on Hugging Face](https://huggingface.co/datasets/schiekiera/llm-association-geometry) · [Blog post](https://schiekiera.github.io/blog/2026/neural-semantic-geometry/)
 

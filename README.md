@@ -3,13 +3,14 @@
 
 > **Accepted at ICML 2026** · [Paper](https://arxiv.org/abs/2602.00628) · [Dataset on Hugging Face](https://huggingface.co/datasets/schiekiera/llm-association-geometry) · [Blog post](https://schiekiera.github.io/blog/2026/neural-semantic-geometry/)
 
+<br>
 
 In cognitive science, semantic knowledge is treated as a latent structure: we cannot observe a speaker's meaning representations directly, but we can probe them through behavior. Word-association paradigms use exactly this logic — when a participant sees a cue (e.g., *dog*), the associations they produce (*cat*, *leash*, *bark*) are constrained by their underlying semantic organization, and aggregated responses yield a similarity matrix that approximates the geometry of an otherwise unobserved system.
 
 We transfer this measurement logic to large language models. Unlike humans, LLMs make *both* behavior and internal representations observable, so we can ask directly: how well does an LLM's behavioral output reveal its own internal semantic geometry?
 
 <p align="center">
-  <img src="img/conceptual.png" alt="Conceptual overview" width="780">
+  <img src="img/conceptual.png" alt="Conceptual overview" width="500">
 </p>
 
 **The framework.** Over a shared vocabulary of 5,000 high-frequency English nouns, we (i) extract layer-wise word representations to form hidden-state similarity matrices, and (ii) collect behavioral associations to build behavioral similarity matrices. Representational similarity analysis (RSA) then correlates the two geometries to quantify behavior–activation alignment.
@@ -17,7 +18,7 @@ We transfer this measurement logic to large language models. Unlike humans, LLMs
 **Two psycholinguistic paradigms.** We probe each model under two classic tasks: **forced choice (FC)**, where the model selects the two most related words from a candidate set of 16, and **free association (FA)**, where the model generates five associates from a single cue. Cue–response counts are reweighted by PPMI, and a cue–cue similarity matrix is derived by cosine similarity. In total, we collected over **17.5 million trials** across eight instruction-tuned transformers (7B–14B params).
 
 <p align="center">
-  <img src="img/both_paradigms.png" alt="Forced choice and free association paradigms" width="780">
+  <img src="img/both_paradigms.png" alt="Forced choice and free association paradigms" width="500">
 </p>
 
 **Key findings.**

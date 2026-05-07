@@ -11,6 +11,8 @@ We transfer this measurement logic to large language models. Unlike humans, LLMs
 
 <p align="center">
   <img src="img/conceptual.png" alt="Conceptual overview" width="500">
+  <br>
+  <sub><em><strong>Conceptual overview.</strong> For a shared vocabulary, we (i) extract layer-wise word representations to form a hidden-state similarity matrix, and (ii) run behavioral association tasks (forced choice / free association) to build a behavioral similarity matrix. RSA correlates the pairwise similarities to quantify behavior–activation alignment.</em></sub>
 </p>
 
 **The framework.** Over a shared vocabulary of 5,000 high-frequency English nouns, we (i) extract layer-wise word representations to form hidden-state similarity matrices, and (ii) collect behavioral associations to build behavioral similarity matrices. Representational similarity analysis (RSA) then correlates the two geometries to quantify behavior–activation alignment.
@@ -19,6 +21,8 @@ We transfer this measurement logic to large language models. Unlike humans, LLMs
 
 <p align="center">
   <img src="img/both_paradigms.png" alt="Forced choice and free association paradigms" width="500">
+  <br>
+  <sub><em><strong>Behavioral paradigms and derived semantic geometries.</strong> Left (forced choice): given a cue word and a candidate set, the model selects the most related words. Right (free association): given a cue word alone, the model generates multiple associates. From the resulting cue–response count matrices, we compute cue–cue similarity matrices via cosine similarity between rows.</em></sub>
 </p>
 
 **Key findings.**
@@ -27,7 +31,9 @@ We transfer this measurement logic to large language models. Unlike humans, LLMs
 - **Measurement protocol matters.** Whether behavior *reveals* internal structure is not a generic property of "behavior" — it depends critically on how responses are constrained and aggregated. Constrained paradigms like FC concentrate observations and yield higher signal-to-noise estimates of semantic geometry.
 
 <p align="center">
-  <img src="img/rsa_line_plot_1x2_grid_fc_fa.png" alt="Forced choice aligns substantially more with hidden states than free association" width="780">
+  <img src="img/rsa_line_plot_1x2_grid_fc_fa.png" alt="Layerwise RSA for forced-choice and free-association behavior" width="780">
+  <br>
+  <sub><em><strong>Layerwise RSA across extraction strategies.</strong> PPMI-weighted forced-choice similarity (left) and free-association similarity (right). Task-aligned prompts yield peak alignment at earlier layers, while averaging over natural contexts shifts peaks later. FC alignment is consistently higher than FA across all strategies.</em></sub>
 </p>
 
 For interpretability research, this means behavioral probing can serve as a practical tool for understanding internal representations under black-box access, *if* the probe is designed with sufficient response constraint.

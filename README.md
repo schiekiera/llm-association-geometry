@@ -10,7 +10,7 @@ nouns, under two paradigms: **forced choice** (pick the two most related of 16 c
 are compared to layer-wise hidden-state similarity with RSA. Forced choice aligns far better
 (*r* = .463 vs. .199) and predicts hidden-state structure for held-out words.
 
-<p align="center"><img src="img/conceptual.png" alt="Conceptual overview" width="300"></p>
+<p align="center"><img src="img/conceptual.png" alt="Conceptual overview" width="500"></p>
 
 <br>
 
